@@ -58,10 +58,10 @@ setup(
     url='https://github.com/rmst/yoke',
     download_url='',
     license='MIT License',
-    dependency_links=['git+https://github.com/stef-15/python-uinput.git@master'],
+    dependency_links=['git+https://github.com/stef-15/python-uinput.git@f6497cc3dd3ae058501cafba392ac60664555a54'],
     install_requires=[
         'zeroconf',
-        'python-uinput @ git+https://github.com/stef-15/python-uinput.git@master; platform_system == "Linux"',
+        'python-uinput @ git+https://github.com/stef-15/python-uinput.git@f6497cc3dd3ae058501cafba392ac60664555a54; platform_system == "Linux"',
     ],
     extras_require={},
     scripts=['bin/yoke', 'bin/yoke-enable-uinput', 'bin/yoke-disable-uinput'],
