@@ -156,6 +156,8 @@ class Service:
         self.sock.bind((self.iface, self.port))
         self.sock.settimeout(0)
         adr, port = self.sock.getsockname()
+        print(f"(yoke service.py run) using adr {adr}, port {port}")
+        port = int(port)
         self.port = port
 
         check_webserver(self.client_path)
