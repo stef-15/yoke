@@ -12,8 +12,10 @@ Get the Android app on [F-Droid](https://f-droid.org/packages/com.simonramstedt.
 
 The Linux client can be installed with
 ```bash
-# Requires Python 3.5+ which comes pre-installed in Ubuntu 16.04 and after.
+# Remove your old yoke install
 python -m pip uninstall python-uinput
+python -m pip uninstall yoke
+# Requires Python 3.12+
 python -m pip install git+https://github.com/stef-15/yoke.git@master --upgrade
 ```
 On Linux to enable Yoke to create gamepad devices we need to add a udev rule
