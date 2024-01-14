@@ -61,7 +61,7 @@ setup(
     dependency_links=[],
     install_requires=[
         'zeroconf',
-        'python-uinput; platform_system == "Linux"',
+        'python-uinput @ git+https://github.com/stef-15/python-uinput.git@master; platform_system == "Linux"',
     ],
     extras_require={},
     scripts=['bin/yoke', 'bin/yoke-enable-uinput', 'bin/yoke-disable-uinput'],
